@@ -8,6 +8,7 @@ import rain_icon from '../assets/rain.png'
 import snow_icon from '../assets/snow.png'
 import wind_icon from '../assets/wind.png'
 import humidity_icon from '../assets/humidity.png'
+import logo from '../assets/tiempito_logo.png';
 
 const Weather = () => {
 
@@ -71,7 +72,7 @@ const Weather = () => {
     return (
         <div className='weather'>
             <div className='titulo'>
-            <img src="./src/assets/tiempito_logo.ico" alt="" className='titulo_icon' />
+            <img src={logo} alt="" className='titulo_icon' />
             </div>
             <div className='search-bar'>
                 <input ref={inputRef} type="text" placeholder='Buscar' onKeyDown={(e) => e.key === "Enter" && search(inputRef.current.value)} />
