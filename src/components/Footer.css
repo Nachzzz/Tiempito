@@ -1,24 +1,27 @@
 .footer {
     width: 100%;
-    background: #1d2c4d;
-    color: #fff;
+    background: #2f4680;
+    color: white;
     text-align: center;
-    padding: 15px 10px;
-    font-size: 16px;
-    position:fixed;
+    padding: 20px;
+    margin-top: 20px;
+    position: fixed;
     bottom: 0;
 }
 
-@media (max-width: 768px) {
-    .footer {
-        font-size: 14px;
-        padding: 10px;
-    }
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
 }
 
-@media (max-width: 480px) {
-    .footer {
-        font-size: 12px;
-        padding: 8px;
-    }
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
 }
