@@ -9,6 +9,7 @@ import snow_icon from '../assets/snow.png'
 import wind_icon from '../assets/wind.png'
 import humidity_icon from '../assets/humidity.png'
 import logo from '../assets/tiempito_logo.png';
+import Footer from './Footer'
 
 const Weather = () => {
 
@@ -68,6 +69,9 @@ const Weather = () => {
     useEffect(() => {
 
     }, [])
+    
+
+    
 
     return (
         <div className='weather'>
@@ -100,6 +104,7 @@ const Weather = () => {
                 </div>
             </> : <></>}
         </div>
+        
     )
 }
 
